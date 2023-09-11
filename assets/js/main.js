@@ -1,3 +1,12 @@
+document.getElementById('selectMenu').addEventListener('change', function() {
+    var selectedOption = this.value;
+    if (selectedOption !== '') {
+      window.location.href = selectedOption;
+    }
+  });
+
+// nav menu end 
+
 /* const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const prevButton = document.querySelector(".arrow.prev");
