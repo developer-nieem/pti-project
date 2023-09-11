@@ -1,0 +1,42 @@
+
+.custom-input::placeholder {
+    padding-left: 20px; 
+  }
+/* navbar css end here */
+
+/* .slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 calc(100% / 3); 
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    top: -5%; 
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+}
+
+.arrow.prev {
+    right: 70px; 
+}
+
+.arrow.next {
+    right: 10px;
+} */
