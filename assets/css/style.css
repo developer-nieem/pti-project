@@ -4,19 +4,21 @@
   }
 /* navbar css end here */
 
-/* .slider-container {
+ .slider-container {
     overflow: hidden;
     position: relative;
 }
 
-.slider {
+.slider , .rqSlider {
     display: flex;
     transition: transform 0.5s ease;
+   
 }
 
-.slide {
-    flex: 0 0 calc(100% / 3); 
+.slide, .rqSlide {
+    flex: 0 0 calc(100% / 5); 
     position: relative;
+    
 }
 
 .slide img {
@@ -24,7 +26,7 @@
     height: auto;
 }
 
-.arrow {
+.arrow , .rqArrow {
     top: -5%; 
     font-size: 24px;
     cursor: pointer;
@@ -33,10 +35,26 @@
     padding: 10px;
 }
 
-.arrow.prev {
+.arrow.prev , .rqPrev{
     right: 70px; 
 }
 
-.arrow.next {
+.arrow.next, .rqNext {
     right: 10px;
-} */
+} 
+/* Popular Audio books end  */
+
+
+
+/* For mobile */
+@media (max-width: 568px) {
+    .slider, .rqSlider {
+        display: flex;
+        transition: transform 0.5s ease;
+        column-gap: 10px;
+       
+    }
+    .slide, .rqSlide {
+        flex: 0 0 calc(100% / 3);
+    }
+}

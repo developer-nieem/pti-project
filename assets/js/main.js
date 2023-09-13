@@ -7,7 +7,7 @@ document.getElementById('selectMenu').addEventListener('change', function() {
 
 // nav menu end 
 
-/* const slider = document.querySelector(".slider");
+const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 const prevButton = document.querySelector(".arrow.prev");
 const nextButton = document.querySelector(".arrow.next");
@@ -33,4 +33,34 @@ nextButton.addEventListener("click", () => {
 });
 
 updateSlider();
- */
+
+// Popular AudioBooks End
+
+
+
+const sliderRq = document.querySelector(".rqSlider");
+const slidesRq = document.querySelectorAll(".rqSlide");
+const prevButtonRq = document.querySelector(".rqArrow.rqPrev");
+const nextButtonRq = document.querySelector(".rqArrow.rqNext");
+let currentIndexRq = 0;
+
+function updateSliderRq() {
+    const offset = -currentIndexRq * (100 / 3);
+    sliderRq.style.transform = `translateX(${offset}%)`;
+}
+
+prevButtonRq.addEventListener("click", () => {
+    if (currentIndexRq > 0) {
+        currentIndexRq--;
+        updateSliderRq();
+    }
+});
+
+nextButtonRq.addEventListener("click", () => {
+    if (currentIndexRq < slidesRq.length - 3) {
+        currentIndexRq++;
+        updateSliderRq();
+    }
+});
+
+updateSliderRq();
